@@ -1,0 +1,11 @@
+language: scala
+jdk:
+- oraclejdk8
+scala:
+- 2.11.11
+script:
+- sbt --info ++$TRAVIS_SCALA_VERSION -DplayTestVersion=2.6.0-RC2 +test
+- sbt --info ++$TRAVIS_SCALA_VERSION +publishLocal
+after_success:
+- ! '[[ $TRAVIS_BRANCH == "master" ]] && { sbt --info +publish; };'
+sudo: false
