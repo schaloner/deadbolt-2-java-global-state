@@ -18,7 +18,7 @@ pomIncludeRepository := { _ => false }
 
 pomExtra := (
   <scm>
-    <url>git@github.com:schaloner/deadbolt-2-java.git</url>
+    <url>git@github.com:schaloner/deadbolt-2-java-global-state.git</url>
     <connection>scm:git:git@github.com:schaloner/deadbolt-2-java-global-state.git</connection>
   </scm>
     <developers>
